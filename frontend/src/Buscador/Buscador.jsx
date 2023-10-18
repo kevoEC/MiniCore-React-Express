@@ -17,7 +17,7 @@ const Buscador = () => {
 
   const handleBuscarClick = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/buscar', { fechaVenta, fechaFin });
+      const response = await axios.post('https://minicore-react-express-backend.onrender.com/buscar', { fechaVenta, fechaFin });
       setResultado(response.data);
     } catch (error) {
       console.error('Error al buscar el producto más vendido:', error);
@@ -46,7 +46,7 @@ const Buscador = () => {
         </div>
       )}
       <div className='linkC'>
-      <a className='link' href="https://github.com/ChrisNT23/Mini-Core.git">Repositorio Github del Mini-Core</a>
+      <a className='link' href="https://github.com/kevoEC/MiniCore-React-Express.git">Repositorio Github del Mini-Core</a>
       </div>
     </div>
     
