@@ -10,30 +10,8 @@ Las ventas tienen una fecha y un monto, que son los elementos principales que se
 
 El objetivo es encontrar en un rango de fechas las ventas pertenecientes a cada ventas y mostrar cual fue el producto más vendido en dichas fechas
 
-## Ejecución del Proyecto
-1. Para instalar las dependencias en el backend y frontend se debe ejecutar en VS el comando
-   #### npm install  
-3. Para ejecutar el backend desde VS, de debe ingresar en la terminal el comando
-   #### yarn start
-4. Nos dará un mensaje que el servidor esta levantado en el puerto 5000 por defecto
-5. Para ejecutar el frontend desde VS, se debe ingresar en la terminal el comando
-   #### npm start
-6. Se abrirá en el navegador http://localhost:3000 y se podrá visualizar el proyecto ejecutándose.
-   
+## Diagrama de la  Aplicación del diseño de ingeniería
+![image](frontend/uploads/DiagramaMVC.png)
 
-## Información Adicional MVC - Express.js - React - MongoDB Atlas
-* [Creación Proyectos React](https://es.legacy.reactjs.org/docs/create-a-new-react-app.html)
-* [MERN STACK](https://openwebinars.net/blog/mern-stack-que-es-y-que-ventajas-ofrece/)
-* [Express.js](https://expressjs.com/es/)
-* [Mongo Atlas](https://www.mongodb.com/es/atlas/database)
-* [MVC](https://desarrolloweb.com/articulos/que-es-mvc.html)
-  
-## Tutoriales de ayuda
-* [Creación App en React](https://www.youtube.com/watch?v=hScR513gvNo)
-* [¿Qué es MERN STACK?](https://www.youtube.com/watch?v=d7_CeHM9FRc)
-* [Crea tu Backend con Express.js](https://www.youtube.com/watch?v=DqpL5UtJHus)
-* [Diferencias entre Backend y Frontend](https://www.youtube.com/watch?v=s95S1_vP-dQ)
-  
-## Contacto
-- christian.narvaez.torres@udla.edu.ec
-- crisarielnarvaezt@gmail.com
+Primero comenzamos con el cliente realizando una acción en el aplicativo (Controladores), estos se manejan de manera conjunta tanto del lado backend, que es donde se crean estos métodos y se setean las rutas para ser consumidas desde el frontend (en este caso tenemos todos los controladores de la consulta), estos controladores manipulan los modelos definidos en la base de datos (models) estos son creados en la base de datos MongoDB con ayuda de Express y con ayuda de la biblioteca de modelado de objetos para Node.js y mongoDB mongoose. Por último con ayuda del framework REACT mostraremos toda la información al cliente cumpliéndose la estructura MVC con ayuda de las herramientas combinadas MERN (MongoDB, Express, React, Node).
+
